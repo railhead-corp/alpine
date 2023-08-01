@@ -42,7 +42,9 @@
 	"runArgs": [
 		// the name of the docker development container this file generates running on the host
 		"--name",
-		"vsc-${localWorkspaceFolderBasename}"
+		"vsc-${localWorkspaceFolderBasename}",
+		"-u",
+		"1000"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],

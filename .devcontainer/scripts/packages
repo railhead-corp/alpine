@@ -1,5 +1,13 @@
 if [ -z "$1" ]; then
     echo "Please specify a command"
-    echo "Options: login, push, updateShadow"
+    echo "Options: help"
     exit
 fi
+
+case $1 in
+    "help" | "Help")
+    ;;
+    *) 
+        echo "Invalid option"
+    ;;
+esac
